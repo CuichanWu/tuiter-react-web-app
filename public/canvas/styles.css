@@ -1,0 +1,17 @@
+h1 {
+    font-size: 2em;
+    color: cadetblue;
+    background-color: blue;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.fg-purple {
+    color: purple;
+}
+
+.tx-large {
+    font-size: 4em;
+}
