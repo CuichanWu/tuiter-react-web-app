@@ -1,3 +1,128 @@
 * {
     background-color: black;
 }
+
+.wd-search-setting-line {
+    margin-bottom: 25px;
+}
+
+form.wd-searchbar {
+    border: none;
+    padding: 0;
+}
+
+input.wd-searchbar {
+    width: 86%;
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 100px;
+    padding: 10px 4px 10px 40px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    background-color: #383737;
+    color: white;
+    float: left;
+    margin-top: 5px;
+}
+
+.wd-setting-icon {
+    color: #4b86c9;
+    margin-right: 12px;
+    margin-left: 12px;
+    float: right;
+    font-size: 40px;
+}
+
+.wd-all-tabs {
+    justify-content: space-evenly;
+}
+
+.wd-tab {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+    font-weight: bold;
+    font-family: Arial;
+    float: left;
+    text-align: center;
+}
+
+.wd-tab-highlighted {
+    color: rgb(29, 161, 242);
+    border-color: rgb(29, 161, 242);
+    border-width: 0px 0px 3px 0px;
+    border-style: solid;
+    float: left;
+    clear: both;
+}
+
+.wd-break {
+    width: 100%;
+    border-color: rgb(110, 118, 125);
+    border-width: 3px 0px 3px 0px;
+    border-style: solid;
+    background-color: #383737;
+    float: left;
+    clear: both;
+    height: 15px;
+}
+
+
+.wd-flex-container-flex {
+    display: flex;
+}
+
+.wd-title {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wd-topic {
+    font-weight: lighter;
+    font-family: Arial;
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-tuit {
+    font-weight: lighter;
+    font-family: Arial;
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    margin-bottom: 20px;
+}
+
+
+.wd-white-dotdotdot {
+    color: white;
+    margin-right: 16px;
+    margin-top: 50px;
+    margin-left: 552px;
+}
+
+.wd-horizontal-break {
+    background-color: rgb(110, 118, 125);
+    width: 100%;
+    height: 1px;
+}
+
+.wd-topic-bold {
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 13px;
+    color: white;
+}
+
+.wd-news-content {
+    width: 452px;
+}
+
+.wd-news-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}

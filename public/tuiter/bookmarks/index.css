@@ -1,0 +1,141 @@
+* {
+    background-color: black;
+}
+
+.wd-title {
+    color: white;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: -10px;
+}
+
+.wd-blue-dot {
+    float: right;
+    color: rgb(29, 161, 242);
+    margin-right: 16px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.wd-flex-container-flex {
+    display: flex;
+}
+
+.wd-flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.wd-gray-dot {
+    float: right;
+    margin-top: -10px;
+    margin-right: -1px;
+}
+
+.wd-userHandler {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.wd-break-line {
+    border-color: rgb(47, 51, 54);
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    width: auto;
+}
+
+.wd-photo-side {
+    width: 60px;
+    float: left;
+    height: 48px;
+}
+
+.wd-content-side {
+    width: 504px;
+}
+
+.wd-user-img {
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-username {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-user-handler {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+    margin-left: 5px;
+}
+
+.wd-content {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-normal-content {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-light-content {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-link-part {
+    width: 504px;
+    height: 400px;
+    /*background-color: #61dafb;*/
+    border-radius: 20px;
+    border-color: rgb(110, 118, 125);
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    /*clear: both;*/
+    display: block;
+    margin-left: auto;
+}
+
+.wd-link-photo {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: block;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgb(110, 118, 125);
+}
+
+.wd-link-icon {
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+    font-size: 18px;
+}
+
+.wd-icon-part {
+    display: flex;;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+}
+
+.wd-font-color-red {
+    color: red;
+}
+
+.wd-icon-font {
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.wd-pair-icon-number {
+    width: 45px;
+}

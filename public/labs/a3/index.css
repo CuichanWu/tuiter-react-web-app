@@ -118,6 +118,11 @@ p#id-selector-2 {
     margin: 30px;
 }
 
+.rounded-corners-top {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
 .rounded-corners-bottom {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -236,4 +241,298 @@ p#id-selector-2 {
 .grid-col-right-sidebar {
     width: 20%;
     float: left;
+}
+
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-counter-clockwise {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: green;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-9deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);
+}
+
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;
+}
+
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;
+}
+
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;
+}
+
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-linear-two {
+    background: linear-gradient(pink, deepskyblue);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial {
+    background: radial-gradient(lightskyblue, purple);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-positioned {
+    background: radial-gradient(
+            at top right, yellow, green);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 250px;
+    height: 250px;
+    background-color: deeppink;
+    color: white;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 120%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+        color: black;
+    }
+    /* continued on right */
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 500%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: orangered;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-box-1 {
+    background-color: yellow;
+}
+
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.flex-container-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container-end {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+}
+
+.flex-container-start {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: start;
+}
+
+.flex-container-space-evenly {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-container-space-between {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container-space-around {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container-space-evenly-flex-start {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flex-container-space-evenly-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-container-space-evenly-vertically-horizontally {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+}
+
+.flex-container-space-evenly-vertically-horizontally > .flex-box {
+    flex-basis: 100%;
+}
+
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: lightpink;
+    }
+
+    .media-query {
+        background-color: red;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: skyblue;
+        color: gray;
+    }
+
+    .media-query {
+        background-color: deepskyblue;
+        color: black;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    body {
+        background-color: lightgreen;
+        color: white;
+    }
+
+    .media-query {
+        background-color: limegreen;
+        color: white;
+        font-size: 22px;
+    }
 }

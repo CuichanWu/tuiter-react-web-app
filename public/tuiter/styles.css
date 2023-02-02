@@ -1,0 +1,30 @@
+.wd-border {
+    border-color: rgb(47, 51, 54);
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    width: 600px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.wd-margin-left {
+    margin-left: 16px;
+}
+
+.wd-margin-right {
+    margin-right: 16px;
+}
+
+.wd-margin-top {
+    margin-top: 12px;
+}
+
+.wd-font-family {
+    font-family: Arial;
+}
+
+.wd-gray-dotdotdot {
+    float: right;
+    color: rgb(110, 118, 125);
+    margin-right: 16px;
+}
