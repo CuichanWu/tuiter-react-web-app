@@ -161,6 +161,10 @@ input.wd-searchbar {
     margin-left: -7px;
 }
 
+.wd-follow-content {
+    left: 55px;
+}
+
 .wd-imagebackground {
     background-image: url("../../images/spacex.jpg");
     width: 100%;
@@ -205,4 +209,8 @@ input.wd-searchbar {
     background-color: #61dafb;
     /*postion: relative;*/
     /*top: 10px;*/
+}
+
+.wd-text-position {
+
 }
