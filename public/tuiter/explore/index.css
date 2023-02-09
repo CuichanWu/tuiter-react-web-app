@@ -9,27 +9,61 @@
 form.wd-searchbar {
     border: none;
     padding: 0;
+    padding-left: 10px;
+    background-color: lightgray;
 }
 
 input.wd-searchbar {
-    width: 86%;
-    border: 1px solid lightgray;
+    width: 90%;
+    border: 0px solid lightgray;
     border-radius: 100px;
     padding: 10px 4px 10px 40px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-    /*background-color: #383737;*/
+    background-color: #f7f9f9;
     /*color: white;*/
     float: left;
     /*margin-top: 5px;*/
 }
 
 .wd-setting-icon {
-    color: #4b86c9;
+    color: #403f3f;
     /*margin-right: 12px;*/
     margin-left: 12px;
+    margin-right: 12px;
     float: right;
-    font-size: 40px;
-    margin-top: -5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.wd-search-part {
+    border-color: #f2f2f2;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+}
+
+.wd-nav-link {
+    margin-top: 10px;
+    color: #a19f9f;
+    font-weight: bold;
+}
+
+.wd-nav-link-active {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+    border: solid deepskyblue;
+    border-width: 0px 0px 3px 0px;
+}
+
+.wd-nar-link-bar {
+    margin-bottom: -7px;
+    border-color: #f2f2f2;
+    border-width: 0px 1px 0px 1px;
+    border-style: solid;
+}
+
+.wd-tuit-color {
+    color: #61dafb;
 }
 
 .wd-all-tabs {
@@ -73,7 +107,9 @@ input.wd-searchbar {
 
 .wd-nav-icon {
     margin-top: 3px;
-    margin-right: 3px;
+    margin-right: 13px;
+    width: 20px;
+    align-content: center;
 }
 
 .wd-title {
@@ -126,9 +162,6 @@ input.wd-searchbar {
     margin-bottom: 5px;
 }
 
-.wd-test2 {
-    background-color: indianred;
-}
 
 .wd-news-img {
     width: 100%;
@@ -147,6 +180,7 @@ input.wd-searchbar {
     min-width: 70px;
     border-radius: 50px;
     margin-top: 10px;
+    height: 45px;
 }
 
 .wd-right-col {
@@ -180,8 +214,8 @@ input.wd-searchbar {
 }
 
 .wd-border-around {
-    border-color: lightgray;
-    border-width: 0px 1px 1px 1px;
+    border-color: #f2f2f2;
+    border-width: 0px 1px 0px 1px;
     border-style: solid;
     align-items: center;
     width: 100%;
@@ -194,7 +228,8 @@ input.wd-searchbar {
 .wd-follow-button {
     /*background-color: red;*/
     /*margin-right: 10px;*/
-    margin-left: -10px;
+    /*margin-left: -20px;*/
+
     /*position: absolute;*/
     /*margin-right: auto;*/
     /*right: -30px;*/
@@ -205,4 +240,25 @@ input.wd-searchbar {
     background-color: #61dafb;
     /*postion: relative;*/
     /*top: 10px;*/
+}
+
+.wd-follow-part {
+    background-color: #f7f9f9;
+}
+
+.wd-follow-whole-part {
+    border-radius: 20px;
+    background-color: #f7f9f9;
+
+}
+
+.wd-show-more {
+    text-decoration: none;
+    color: #61dafb;
+}
+
+.wd-copyright {
+    color: gray;
+    margin-top: 20px;
+    font-size: 15px;
 }
