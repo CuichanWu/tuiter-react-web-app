@@ -1,0 +1,30 @@
+export default [
+    {
+        userName: 'Elon Musk',
+        handle: 'elonmusk',
+        time: '23h',
+        title: 'Amazing show about @Inspiration4x mission!',
+        image: '../../images/elonmusk.jpg',
+        onlyImg: false,
+        sharingImg: '../../images/inspiration4.jpg',
+        sharingTitle: 'Countdown: Inspiration4 Mission to Space',
+        sharingContent: 'From training to launch to landing, this all-access ...',
+        comment: '4.2k',
+        repost: '3.5k',
+        like: '37.5k',
+    },
+    {
+        userName: 'New York Post',
+        handle: 'nypost',
+        time: '23h',
+        title: "Grimes seen reading Karl Marx following split with world's richest man Elon Musk",
+        image: "../../images/newyorkpost.jpg",
+        onlyImg: true,
+        sharingImg: '../../images/reading.jpg',
+        sharingTitle: 'Reading Karl Marx',
+        sharingContent: 'A lady ...',
+        comment: '965',
+        repost: '2.4k',
+        like: '4k',
+    }
+]
