@@ -9,7 +9,7 @@ const PostItem = (homePost) => {
                 </div>
 
                 <div class=" wd-margin-left">
-                    <div class="wd-content-side wd-margin-right">
+                    <div class="wd-content-side wd-margin-right ">
                         <span class="wd-username wd-margin-top  wd-font-family">${homePost.userName}</span>
                         <span class="wd-user-handler wd-font-family">@${homePost.handle}</span><span
                             class="wd-user-handler wd-font-family">· ${homePost.time}</span><span

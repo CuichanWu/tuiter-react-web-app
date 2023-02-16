@@ -23,7 +23,7 @@ function NavigationSidebar(active) {
                    id="list-notification-list"
                    href="../notifications.html" role="tab"
                    aria-controls="list-notification  "><i
-                        class="fa-solid fa-bell wd-nav-icon  wd-bg-dark"></i> <span
+                        class="fa-solid fa-bell wd-nav-icon "></i> <span
                         class="d-none d-xl-block  ">Notification</span></a>
                 <a class="list-group-item list-group-item-action wd-flex-container-flex wd-bg-dark"
                    id="list-message-list"
