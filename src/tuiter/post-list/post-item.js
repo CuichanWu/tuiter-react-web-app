@@ -41,15 +41,17 @@ const PostItem = ({post}) => {
 
 
                 <div className="wd-icon-part wd-flex-container-flex">
-                    <div className="wd-pair-icon-number"><span><a href="#" className="wd-link-icon "><FaRegComment/></a></span>
+                    <div className="wd-pair-icon-number"><span><a href="/hello"
+                                                                  className="wd-link-icon "><FaRegComment/></a></span>
                         <span> {post.comment}</span></div>
-                    <div className="wd-pair-icon-number"><span><a href="#"
+                    <div className="wd-pair-icon-number"><span><a href="/hello"
                                                                   className="wd-link-icon"><FaRetweet/></a></span><span
                         className="wd-link-icon wd-font-family wd-icon-font"> {post.repost}</span></div>
-                    <div className="wd-pair-icon-number"><span><a href="#"
+                    <div className="wd-pair-icon-number"><span><a href="/hello"
                                                                   className="wd-link-icon "><FaRegHeart/></a></span><span
                         className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {post.like}</span></div>
-                    <div className="wd-pair-icon-number"><span><a href="#" className="wd-link-icon"><FaRegShareSquare/></a></span>
+                    <div className="wd-pair-icon-number"><span><a href="/hello"
+                                                                  className="wd-link-icon"><FaRegShareSquare/></a></span>
                     </div>
                 </div>
 
