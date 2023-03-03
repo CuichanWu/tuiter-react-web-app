@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import ReduxExamples from "./redux-examples";
 
 const Assignment7 = () => {
