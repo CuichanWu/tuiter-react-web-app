@@ -15,6 +15,10 @@
     margin-top: 12px;
 }
 
+.wd-margin-right {
+    margin-right: 12px;
+}
+
 .wd-flex-container-flex {
     display: flex;
 }
@@ -52,7 +56,6 @@
 
 .wd-font-family {
     font-family: Arial;
-
 }
 
 .wd-gray-dotdotdot {
@@ -64,6 +67,7 @@
 
 .wd-content {
     font-size: 15px;
+
 }
 
 .wd-sharing-photo {
@@ -84,6 +88,7 @@
 }
 
 .wd-link-photo {
+    margin-top: 10px;
     width: 95%;
     height: 264px;
     /*border-top-left-radius: 20px;*/
@@ -132,4 +137,10 @@
     border-style: solid;
     /*align-items: center;*/
     width: 100%;
+}
+
+.wd-checked {
+    margin-left: 3px;
+    margin-bottom: 3px;
+    color: dodgerblue;
 }

@@ -3,6 +3,7 @@ import {FaRegComment} from "react-icons/fa";
 import {FaRetweet} from "react-icons/fa";
 import {FaRegHeart} from "react-icons/fa";
 import {FaRegShareSquare} from "react-icons/fa";
+import {FaCheckCircle} from "react-icons/fa";
 
 const PostItem = ({post}) => {
     return (
@@ -14,17 +15,19 @@ const PostItem = ({post}) => {
                              alt="" className="wd-user-img"/>
                     </div>
 
-                    <div className=" wd-margin-left wd-margin-right">
-                        {/*<div className="wd-content-side wd-margin-right ">*/}
-                        <span className="wd-username wd-margin-top  wd-font-family">{post.userName}</span>
+                    <div className="wd-margin-left wd-margin-right ">
+                        <span className="wd-username wd-margin-top  wd-font-family">{post.userName}
+                            <FaCheckCircle className="wd-checked"/></span>
                         <span className="wd-user-handler wd-font-family">@{post.handle}</span><span
                         className="wd-user-handler wd-font-family">· {post.time}</span><span
                         className="wd-gray-dotdotdot wd-font-family  ">…</span><br/>
-                        <span className="wd-content wd-font-family">{post.title}</span>
+                        <span className="wd-content wd-font-family ">{post.title}</span>
 
 
                         {/*<div className="wd-sharing-photo">*/}
                         {/*<span className="wd-link-part">*/}
+
+
                         <img src={`${post.sharingImg}`}
                              alt="" className="wd-link-photo"/>
 
