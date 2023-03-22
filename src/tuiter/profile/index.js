@@ -53,8 +53,8 @@ function ProfileComponent() {
 						<span className="fw-bold">{profile.followingCount}</span> Following <span className="ms-3"/>
 						<span className="fw-bold">{profile.followersCount}</span> Followers
 					</div>
-					<div className="mt-2">a
-						{profile.websitea}
+					<div className="mt-2">
+						{profile.website}
 					</div>
 				</div>
 			</div>
