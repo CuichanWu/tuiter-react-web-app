@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 123,
+    "topic": "Tesla",
+    "userName": "Tesla",
+    "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    "time": "2h",
+    "image": "tesla.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 1234,
+    "handle": "@tesla",
+    "tuit": "Autopilot advanced safety and convenience features are designed to assist you with the most burdensome parts of driving. Autopilot introduces new features and improves existing functionality to make your Tesla safer and more capable over time.\n\nAutopilot enables your car to steer, accelerate and brake automatically within its lane.\n\nCurrent Autopilot features require active driver supervision and do not make the vehicle autonomous."
+  },
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "3h",
+    "image": "spacex-avator.jpg",
+    "liked": true,
+    "replies": 2235,
+    "retuits": 513,
+    "likes": 7346,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 345,
+    "topic": "Energy",
+    "userName": "Tesla",
+    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+    "time": "4d",
+    "image": "tesla.jpg",
+    "liked": false,
+    "replies": 924,
+    "retuits": 135,
+    "likes": 3452,
+    "handle": "@tesla",
+    "tuit": "Navigate on Autopilot suggests lane changes to optimize your route, and makes adjustments so you don’t get stuck behind slow cars or trucks. When active, Navigate on Autopilot will also automatically steer your vehicle toward highway interchanges and exits based on your destination."
+  }
+]
