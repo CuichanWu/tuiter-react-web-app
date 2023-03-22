@@ -1,5 +1,4 @@
 import React from "react";
-import whoArray from '../data/who.json';
 import WhoToFollowListItem from "./who-to-follow-list-item";
 import {useSelector} from "react-redux";
 
