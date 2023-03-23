@@ -21,12 +21,12 @@ function ProfileComponent() {
 			<img src="/images/banner.png" alt="banner" className="w-100"/>
 
 			<div className="d-flex flex-row">
-				<div style={{marginTop: -50, marginLeft: 20, width: '90%'}}>
+				<div style={{marginTop: -50, marginLeft: 20, width: '70%'}}>
 					<img src="/images/cuichan.png" alt="profile"
 							 className="rounded-circle w-25 border border-light border-3 z-1 position-absolute"/>
 				</div>
 
-				<div style={{width: '40%'}}>
+				<div style={{width: 130, right: 0}}>
 					{/*<button className="mt-3 rounded-5 btn btn-light border border-2 border-light-subtle">Edit Profile</button>*/}
 					<a href="/tuiter/edit-profile" className="mt-3 rounded-5 btn btn-light border border-2 border-light-subtle">Edit
 						Profile</a>
