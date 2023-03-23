@@ -24,6 +24,7 @@ function EditProfile() {
 		dispatch(updateProfile(profile));
 	}
 
+
 	return (
 		<div>
 			<div className="d-flex flex-row">
