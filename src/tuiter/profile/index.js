@@ -4,6 +4,7 @@ import {HiOutlineLocationMarker} from "react-icons/hi";
 import {FaBirthdayCake} from "react-icons/fa";
 import {BsCalendar3} from "react-icons/bs";
 import {BiLeftArrowAlt} from "react-icons/bi";
+import {Link} from "react-router-dom";
 
 function ProfileComponent() {
 	const profile = useSelector((state) => state.profile);
@@ -28,8 +29,10 @@ function ProfileComponent() {
 
 				<div style={{width: 130, right: 0}}>
 					{/*<button className="mt-3 rounded-5 btn btn-light border border-2 border-light-subtle">Edit Profile</button>*/}
-					<a href="/tuiter/edit-profile" className="mt-3 rounded-5 btn btn-light border border-2 border-light-subtle">Edit
-						Profile</a>
+					{/*<a href="/tuiter/edit-profile" className="mt-3 rounded-5 btn btn-light border border-2 border-light-subtle">Edit*/}
+					{/*	Profile</a>*/}
+					<Link to="/tuiter/edit-profile" className="btn btn-outline-dark rounded-pill float-end fw-bold">Edit
+						profile</Link>
 				</div>
 			</div>
 
