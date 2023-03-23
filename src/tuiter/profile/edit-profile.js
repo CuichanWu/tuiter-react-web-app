@@ -55,47 +55,43 @@ function EditProfile() {
 			</div>
 
 			<div className="ms-4 me-4">
-				<div style={{marginTop: 100}}>
+				<div style={{marginTop: 150}}>
 
-					<div className="input-group mb-3">
-						<span className="input-group-text" id="inputGroup-sizing-default">FirstName</span>
-						<input type="text" className="form-control" aria-label="Sizing example input"
-									 aria-describedby="inputGroup-sizing-default" value={profile.firstName} name="firstName"
-									 onChange={handleChange}/>
-					</div>
-					<div className="input-group mb-3">
-						<span className="input-group-text" id="inputGroup-sizing-default">LastName</span>
-						<input type="text" className="form-control" aria-label="Sizing example input"
-									 aria-describedby="inputGroup-sizing-default" value={profile.lastName} name="lastName"
-									 onChange={handleChange}/>
-					</div>
+					<form className="form-floating mb-3">
+						<input type="text" className="form-control" id="firstname" placeholder="enter your first name"
+									 value={profile.firstName} name="firstName" onChange={handleChange}/>
+						<label htmlFor="firstname">FirstName</label>
+					</form>
 
-					<div className="input-group mb-3">
-						<span className="input-group-text">Bio</span>
-						<textarea className="form-control" aria-label="With textarea" value={profile.bio} name="bio"
+					<form className="form-floating mb-3">
+						<input type="text" className="form-control" id="lastname" placeholder="enter your last name"
+									 value={profile.lastName} name="lastName" onChange={handleChange}/>
+						<label htmlFor="lastname">LastName</label>
+					</form>
+
+					<div className="form-floating mb-3">
+						<textarea className="form-control" placeholder="Leave your bio here" id="bio" value={profile.bio} name="bio"
 											onChange={handleChange}></textarea>
+						<label htmlFor="bio">Bio</label>
 					</div>
 
-					<div className="input-group mb-3">
-						<span className="input-group-text" id="inputGroup-sizing-default">Location</span>
-						<input type="text" className="form-control" aria-label="Sizing example input"
-									 aria-describedby="inputGroup-sizing-default" value={profile.location} name="location"
-									 onChange={handleChange}/>
-					</div>
+					<form className="form-floating mb-3">
+						<input type="text" className="form-control" id="location" placeholder="enter your location"
+									 value={profile.location} name="location" onChange={handleChange}/>
+						<label htmlFor="location">Location</label>
+					</form>
 
-					<div className="input-group mb-3">
-						<span className="input-group-text" id="inputGroup-sizing-default">Website</span>
-						<input type="text" className="form-control" aria-label="Sizing example input"
-									 aria-describedby="inputGroup-sizing-default" value={profile.website} name="website"
-									 onChange={handleChange}/>
-					</div>
+					<form className="form-floating mb-3">
+						<input type="text" className="form-control" id="website" placeholder="enter your website"
+									 value={profile.website} name="website" onChange={handleChange}/>
+						<label htmlFor="website">Website</label>
+					</form>
 
-					<div className="input-group mb-3">
-						<span className="input-group-text" id="inputGroup-sizing-default">Date of Birth</span>
-						<input type="text" className="form-control" aria-label="Sizing example input"
-									 aria-describedby="inputGroup-sizing-default" value={profile.dateOfBirth} name="dateOfBirth"
-									 onChange={handleChange}/>
-					</div>
+					<form className="form-floating mb-3">
+						<input type="text" className="form-control" id="dateOfBirth" placeholder="enter your date of birth"
+									 value={profile.dateOfBirth} name="dateOfBirth" onChange={handleChange}/>
+						<label htmlFor="dateOfBirth">Date of Birth</label>
+					</form>
 
 				</div>
 			</div>

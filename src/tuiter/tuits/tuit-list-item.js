@@ -22,21 +22,25 @@ const TuitListItem = ({post}) => {
 									 alt="" className="float-end rounded-circle"/>
 						</div>
 
-						<div className="wd-margin-left wd-margin-right ">
+						<div className="wd-margin-left wd-margin-right d-flex flex-row">
+							<div>
 						<span className="wd-username wd-margin-top  wd-font-family">{post.userName}
 							<FaCheckCircle className="wd-checked"/></span>
-							<span className="wd-user-handler wd-font-family">{post.handle}</span><span
-							className="wd-user-handler wd-font-family">· {post.time}</span>
-							<i className="bi bi-x-lg float-end"
-								 onClick={() => deleteTuitHandler(post._id)}></i>
-							<div className="col-11">
-								<div>{post.tuit}</div>
+								<span className="wd-user-handler wd-font-family">{post.handle}</span><span
+								className="wd-user-handler wd-font-family">· {post.time}</span>
+
+								<div>
+									<div>{post.tuit}</div>
+								</div>
+							</div>
+							<div style={{position: "absolute", top: 0, right: 0, marginTop: 10, marginRight: 10}}>
+								<i className="bi bi-x-lg float-end"
+									 onClick={() => deleteTuitHandler(post._id)}></i>
 							</div>
 
 
 							{/*<div className="wd-sharing-photo">*/}
 							{/*<span className="wd-link-part">*/}
-
 
 							{/*<img src={`${post.sharingImg}`}*/}
 							{/*		 alt="" className="wd-link-photo"/>*/}
@@ -48,32 +52,32 @@ const TuitListItem = ({post}) => {
 							{/*</span>*/}
 							{/*</div>*/}
 
-
 						</div>
 					</div>
 
 
 					<div className="wd-icon-part wd-flex-container-flex">
-						<div className="wd-pair-icon-number"><span><a href="/hello"
-																													className="wd-link-icon "><FaRegComment/></a></span>
+						<div className="wd-pair-icon-number">
+							<span><a href="/hello" className="wd-link-icon "><FaRegComment/></a></span>
 							<span> {post.comment}</span>{post.replies}</div>
 
-						<div className="wd-pair-icon-number"><span><a href="/hello"
-																													className="wd-link-icon"><FaRetweet/></a></span><span
-							className="wd-link-icon wd-font-family wd-icon-font"> {post.repost}{post.retuits}</span></div>
+						<div className="wd-pair-icon-number">
+							<span><a href="/hello" className="wd-link-icon"><FaRetweet/></a></span>
+							<span className="wd-link-icon wd-font-family wd-icon-font"> {post.repost}{post.retuits}</span></div>
 						{post.liked ?
-							<div className="wd-pair-icon-number"><span><a href="/hello"
-																														className="wd-link-icon "><FaHeart
-								style={{color: "red"}}/></a></span><span
-								className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {post.like}{post.likes}</span>
+							<div className="wd-pair-icon-number">
+								<span><a href="/hello" className="wd-link-icon "><FaHeart style={{color: "red"}}/></a></span>
+								<span
+									className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {post.like}{post.likes}</span>
 							</div> :
-							<div className="wd-pair-icon-number"><span><a href="/hello"
-																														className="wd-link-icon "><FaRegHeart/></a></span><span
-								className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {post.like}{post.likes}</span>
+							<div className="wd-pair-icon-number">
+								<span><a href="/hello" className="wd-link-icon "><FaRegHeart/></a></span>
+								<span
+									className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {post.like}{post.likes}</span>
 							</div>}
 
-						<div className="wd-pair-icon-number"><span><a href="/hello"
-																													className="wd-link-icon"><FaRegShareSquare/></a></span>
+						<div className="wd-pair-icon-number">
+							<span><a href="/hello" className="wd-link-icon"><FaRegShareSquare/></a></span>
 						</div>
 					</div>
 
