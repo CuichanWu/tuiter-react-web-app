@@ -28,9 +28,6 @@ function ProfileComponent() {
 				</div>
 
 				<div style={{width: 130, right: 0}}>
-					{/*<button className="mt-3 rounded-5 btn btn-light border border-2 border-light-subtle">Edit Profile</button>*/}
-					{/*<a href="/tuiter/edit-profile" className="mt-3 rounded-5 btn btn-light border border-2 border-light-subtle">Edit*/}
-					{/*	Profile</a>*/}
 					<Link to="/tuiter/edit-profile" className="btn btn-outline-dark rounded-pill float-end fw-bold mt-2">Edit
 						profile</Link>
 				</div>

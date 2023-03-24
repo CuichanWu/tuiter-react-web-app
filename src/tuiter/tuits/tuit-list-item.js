@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {FaRegComment, FaHeart} from "react-icons/fa";
 import {FaRetweet} from "react-icons/fa";
-import {FaRegHeart} from "react-icons/fa";
 import {FaRegShareSquare} from "react-icons/fa";
 import {FaCheckCircle} from "react-icons/fa";
 import {useDispatch, useSelector} from "react-redux";
@@ -46,21 +45,6 @@ const TuitListItem = ({post}) => {
 								<i className="bi bi-x-lg float-end"
 									 onClick={() => deleteTuitHandler(post._id)}></i>
 							</div>
-
-
-							{/*<div className="wd-sharing-photo">*/}
-							{/*<span className="wd-link-part">*/}
-
-							{/*<img src={`${post.sharingImg}`}*/}
-							{/*		 alt="" className="wd-link-photo"/>*/}
-
-							{/*<div>*/}
-							{/*<div className="wd-normal-content   wd-font-family">{post.sharingTitle}</div>*/}
-							{/*<div className="wd-light-content  wd-font-family ">{post.sharingContent}</div>*/}
-							{/*    </div>*/}
-							{/*</span>*/}
-							{/*</div>*/}
-
 						</div>
 					</div>
 
@@ -80,7 +64,6 @@ const TuitListItem = ({post}) => {
 								className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {like}{post.likes}</span>
 						</div>
 
-
 						<div className="wd-pair-icon-number">
 							<span><a href="/hello" className="wd-link-icon"><FaRegShareSquare/></a></span>
 						</div>
@@ -89,7 +72,6 @@ const TuitListItem = ({post}) => {
 
 				</div>
 			</li>
-			{/*<div className="wd-break-line"></div>*/}
 		</div>
 
 	)
