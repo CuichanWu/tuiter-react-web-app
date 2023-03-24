@@ -1,17 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FaRegComment, FaHeart} from "react-icons/fa";
 import {FaRetweet} from "react-icons/fa";
 import {FaRegHeart} from "react-icons/fa";
 import {FaRegShareSquare} from "react-icons/fa";
 import {FaCheckCircle} from "react-icons/fa";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {deleteTuit} from "./tuits-reducer";
+import {updateTuit} from "./tuits-reducer";
 
 const TuitListItem = ({post}) => {
 	const dispatch = useDispatch();
 	const deleteTuitHandler = (id) => {
 		dispatch(deleteTuit(id))
 	}
+	const initialLiked = useSelector((state) => state.tuits.find(tuit => tuit._id === post._id).liked);
+	const [like, setLike] = useState(initialLiked);
+	const likeTuitHandler = () => {
+		setLike(!like);
+		dispatch(updateTuit(!like));
+	}
+	const likeColor = like ? "red" : "gray";
+
 	return (
 		<div>
 			<li className="list-group-item">
@@ -64,17 +73,13 @@ const TuitListItem = ({post}) => {
 						<div className="wd-pair-icon-number">
 							<span><a href="/hello" className="wd-link-icon"><FaRetweet/></a></span>
 							<span className="wd-link-icon wd-font-family wd-icon-font"> {post.repost}{post.retuits}</span></div>
-						{post.liked ?
-							<div className="wd-pair-icon-number">
-								<span><a href="/hello" className="wd-link-icon "><FaHeart style={{color: "red"}}/></a></span>
-								<span
-									className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {post.like}{post.likes}</span>
-							</div> :
-							<div className="wd-pair-icon-number">
-								<span><a href="/hello" className="wd-link-icon "><FaRegHeart/></a></span>
-								<span
-									className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {post.like}{post.likes}</span>
-							</div>}
+
+						<div className="wd-pair-icon-number">
+							<span><FaHeart style={{color: likeColor}} onClick={likeTuitHandler}/></span>
+							<span
+								className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red"> {like}{post.likes}</span>
+						</div>
+
 
 						<div className="wd-pair-icon-number">
 							<span><a href="/hello" className="wd-link-icon"><FaRegShareSquare/></a></span>

@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import {TiDeleteOutline} from "react-icons/ti";
 import {updateProfile} from "./profile-reducer";
+import {useNavigate} from "react-router-dom";
 
 
 function EditProfile() {
@@ -19,9 +20,11 @@ function EditProfile() {
 		const {name, value} = event.target;
 		setProfile((prevProfile) => ({...prevProfile, [name]: value}));
 	}
+	const navigate = useNavigate();
 	const handleSave = (event) => {
 		event.preventDefault();
 		dispatch(updateProfile(profile));
+		navigate("/tuiter/profile");
 	}
 
 
@@ -44,6 +47,11 @@ function EditProfile() {
 						Save
 					</button>
 				</div>
+
+				{/*<span><Link to="/tuiter/profile" className="btn btn-dark fw-bold rounded-pill float-end mb-2"*/}
+				{/*						onClick={handleSave}>Save*/}
+				{/*        </Link></span>*/}
+
 			</div>
 			<img src="/images/banner.png" alt="banner" className="w-100"/>
 
