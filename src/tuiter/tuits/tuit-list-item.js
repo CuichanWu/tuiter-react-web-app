@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { FaRegComment, FaHeart } from "react-icons/fa";
-import { FaRetweet } from "react-icons/fa";
-import { FaRegShareSquare } from "react-icons/fa";
+import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { deleteTuit } from "./tuits-reducer";
 import TuitStats from "./tuit-stats.js";
 
