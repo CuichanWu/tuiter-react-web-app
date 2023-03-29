@@ -1,62 +1,73 @@
 import React, { useState } from "react";
+import { updateTuit } from "./tuits-reducer";
+import { useDispatch, useSelector } from "react-redux";
+import { FaRegComment, FaHeart } from "react-icons/fa";
+import { FaRetweet } from "react-icons/fa";
+import { FaRegShareSquare } from "react-icons/fa";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
-const TuitStats = ({ tuit }) => {
-  const [isLiked, setIsLiked] = useState(tuit.liked);
-  const [likesCount, setLikesCount] = useState(tuit.likes);
+const TuitStats = ({ post }) => {
+  const dispatch = useDispatch();
+  //   const initialLiked = useSelector(
+  //     (state) => state.tuits.find((tuit) => tuit._id === post._id).liked
+  //   );
+  //   const initialLikes = useSelector(
+  //     (state) => state.tuits.find((tuit) => tuit._id === post._id).likes
+  //   );
+  const [like, setLike] = useState(post.liked);
+  const [likesCount, setLikesCount] = useState(post.likes);
 
-  const handleLike = () => {
-    if (isLiked) {
-      setIsLiked(false);
-      setLikesCount((count) => count - 1);
-    } else {
-      setIsLiked(true);
-      setLikesCount((count) => count + 1);
-    }
-  };
+  const likeColor = like ? "red" : "gray";
+
   return (
     <div className="wd-icon-part wd-flex-container-flex">
       <div className="wd-pair-icon-number">
         <span>
-          <a href="/hello" className="wd-link-icon ">
+          <a href="/hello" className="wd-link-icon me-1">
             <FaRegComment />
           </a>
         </span>
-        <span> {post.comment}</span>
-        {post.replies}
+        <span className="wd-link-icon wd-font-family wd-icon-font">
+          {post.replies}
+        </span>
       </div>
 
       <div className="wd-pair-icon-number">
         <span>
-          <a href="/hello" className="wd-link-icon">
+          <a href="/hello" className="wd-link-icon  me-1">
             <FaRetweet />
           </a>
         </span>
         <span className="wd-link-icon wd-font-family wd-icon-font">
-          {" "}
-          {post.repost}
           {post.retuits}
         </span>
       </div>
 
-      {/* <div className="wd-pair-icon-number">
-        <span>
-          <FaHeart style={{ color: likeColor }} onClick={likeTuitHandler} />
+      <div className="wd-pair-icon-number">
+        {/* <span>
+          <FaHeart
+            style={{ color: likeColor }}
+            onClick={() =>
+              dispatch(
+                updateTuitThunk({
+                  ...post,
+                  likes: post.likes + 1,
+                })
+              )
+            }
+          />
         </span>
         <span className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red">
-          {" "}
           {like}
-          {post.likes}
-        </span>
-      </div> */}
-
-      <div>
-        Likes: {tuit.likes}
+          {likesCount}
+        </span> */}
+        Likes: {post.likes}
         <i
           onClick={() =>
             dispatch(
               updateTuitThunk({
-                ...tuit,
-                likes: tuit.likes + 1,
+                ...post,
+                likes: post.likes + 1,
               })
             )
           }
