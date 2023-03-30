@@ -10,7 +10,7 @@ const TuitsList = () => {
 	useEffect(() => {
 		dispatch(findTuitsThunk());
 	}, []);
-	console.log(tuits);
+	// console.log(tuits);
 	//   const tuitListItems = useSelector((state) => state.tuits);
 	return (
 		// <div className=" align-items-start ">

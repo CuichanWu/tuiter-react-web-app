@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 // import { updateTuit } from "./tuits-reducer";
 import {useDispatch} from "react-redux";
 import {FaRegComment} from "react-icons/fa";
