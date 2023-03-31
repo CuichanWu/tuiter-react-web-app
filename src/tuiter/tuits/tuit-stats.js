@@ -8,6 +8,7 @@ import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = ({post}) => {
 	const dispatch = useDispatch();
+	
 	//   const initialLiked = useSelector(
 	//     (state) => state.tuits.find((tuit) => tuit._id === post._id).liked
 	//   );
