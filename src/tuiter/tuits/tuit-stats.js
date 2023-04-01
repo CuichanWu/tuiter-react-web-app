@@ -1,25 +1,49 @@
-import React from "react";
+import React, {useState} from "react";
 // import { updateTuit } from "./tuits-reducer";
 import {useDispatch} from "react-redux";
-import {FaRegComment} from "react-icons/fa";
+import {FaRegComment, FaHeart, FaRegThumbsDown} from "react-icons/fa";
 import {FaRetweet} from "react-icons/fa";
 import {FaRegShareSquare} from "react-icons/fa";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = ({post}) => {
 	const dispatch = useDispatch();
-	
-	//   const initialLiked = useSelector(
-	//     (state) => state.tuits.find((tuit) => tuit._id === post._id).liked
-	//   );
-	//   const initialLikes = useSelector(
-	//     (state) => state.tuits.find((tuit) => tuit._id === post._id).likes
-	//   );
-	// const [like, setLike] = useState(post.liked);
-	// const [likesCount, setLikesCount] = useState(post.likes);
-	//
-	// const likeColor = like ? "red" : "gray";
 
+	const [like, setLike] = useState(post.liked);
+	const [likesCount, setLikesCount] = useState(post.likes);
+	const likeTuitHandler = () => {
+		if (like) {
+			setLike(false);
+			setLikesCount((likesCount) => likesCount - 1);
+		} else {
+			setLike(true);
+			setLikesCount((likesCount) => likesCount + 1);
+		}
+		dispatch(updateTuitThunk({
+			...post, liked: like, likes: likesCount
+		}));
+	};
+	const likeColor = like ? "red" : "gray";
+
+	const [dislike, setDislike] = useState(post.disliked);
+	const [dislikesCount, setDislikesCount] = useState(post.dislikes);
+	const dislikeTuitHandler = () => {
+		if (dislike) {
+			setDislike(false);
+			setDislikesCount((dislikesCount) => dislikesCount - 1);
+		} else {
+			setDislike(true);
+			setDislikesCount((dislikesCount) => dislikesCount + 1);
+		}
+		dispatch(updateTuitThunk({
+			...post, disliked: dislike, dislikes: dislikesCount
+		}));
+	};
+	const dislikeColor = dislike ? "blue" : "gray";
+
+	// updateTuitThunk({
+	// 				...post,
+	// 				likes: post.likes + 1
 	return (
 		<div className="wd-icon-part wd-flex-container-flex">
 			<div className="wd-pair-icon-number">
@@ -45,35 +69,34 @@ const TuitStats = ({post}) => {
 			</div>
 
 			<div className="wd-pair-icon-number">
-				{/* <span>
-          <FaHeart
-            style={{ color: likeColor }}
-            onClick={() =>
-              dispatch(
-                updateTuitThunk({
-                  ...post,
-                  likes: post.likes + 1,
-                })
-              )
-            }
-          />
+        <span>
+          <FaHeart style={{color: likeColor}} onClick={likeTuitHandler}/>
         </span>
-        <span className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red">
-          {like}
-          {likesCount}
-        </span> */}
-				Likes: {post.likes}
-				<i
-					onClick={() =>
-						dispatch(
-							updateTuitThunk({
-								...post,
-								likes: post.likes + 1,
-							})
-						)
-					}
-					className="bi bi-heart-fill me-2 text-danger"
-				></i>
+				<span className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red ms-1">
+          {/*{like}*/}
+					{likesCount}
+        </span>
+			</div>
+			{/*Likes: {post.likes}*/}
+			{/*<i*/}
+			{/*	onClick={() =>*/}
+			{/*		dispatch(*/}
+			{/*			updateTuitThunk({*/}
+			{/*				...post,*/}
+			{/*				likes: post.likes + 1,*/}
+			{/*			})*/}
+			{/*		)*/}
+			{/*	}*/}
+			{/*	className="bi bi-heart-fill me-2 text-danger"*/}
+			{/*></i>*/}
+			<div className="wd-pair-icon-number">
+        <span>
+          <FaRegThumbsDown style={{color: dislikeColor}} onClick={dislikeTuitHandler}/>
+        </span>
+				<span className="wd-link-icon wd-font-family wd-icon-font wd-font-color-red ms-1">
+          {/*{dislike}*/}
+					{dislikesCount}
+        </span>
 			</div>
 
 			<div className="wd-pair-icon-number">
