@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import { updateTuit } from "./tuits-reducer";
 import {useDispatch} from "react-redux";
 import {FaRegComment, FaHeart, FaRegThumbsDown} from "react-icons/fa";
 import {FaRetweet} from "react-icons/fa";
@@ -41,7 +40,7 @@ const TuitStats = ({post}) => {
 	};
 	const dislikeColor = dislike ? "blue" : "gray";
 
-	
+
 	return (
 		<div className="wd-icon-part wd-flex-container-flex">
 			<div className="wd-pair-icon-number">
