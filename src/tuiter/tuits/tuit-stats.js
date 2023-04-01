@@ -41,9 +41,7 @@ const TuitStats = ({post}) => {
 	};
 	const dislikeColor = dislike ? "blue" : "gray";
 
-	// updateTuitThunk({
-	// 				...post,
-	// 				likes: post.likes + 1
+	
 	return (
 		<div className="wd-icon-part wd-flex-container-flex">
 			<div className="wd-pair-icon-number">
