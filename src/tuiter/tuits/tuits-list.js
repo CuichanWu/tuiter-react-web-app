@@ -11,6 +11,7 @@ const TuitsList = () => {
 	}, []);
 	// console.log(tuits);
 	//   const tuitListItems = useSelector((state) => state.tuits);
+
 	return (
 		// <div className=" align-items-start ">
 		//   {tuitListItems.map((post) => (
