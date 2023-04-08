@@ -12,6 +12,7 @@ const PostSummaryList = () => {
 	useEffect(() => {
 		dispatch(findTuitsThunk());
 	}, []);
+
 	return (
 		<ul className="list-group">
 			{tuits.map((post) => (
